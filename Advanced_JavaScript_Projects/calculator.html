@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Basic HTML, CSS, and JavaScript Calculator">
+    <meta name="author" content="Khalil Niser">
+    <!--                ---- LINK_CSS -->
+    <link rel="stylesheet" type="text/css" href="/CSS/calculator_css.css">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <!-- DIV_CONTAINER: This is the main "div-container" that
+    will display the calculator -->
+    <!-- CALCULATOR_DIV -->
+    <div class="calculator">
+
+        <!-- This input displays the result of the calculator -->
+        <input type="text" class="calculator-screen" value="0" disabled>
+
+        <!-- CALCULATOR-KEYS_DIV -->
+        <div class="calculator-keys">
+            <!-- OPERATOR_BUTTONS -->
+            <button type="button" class="operator" value="+">&#43;</button>
+            <button type="button" class="operator" value="-">&#45;</button>
+            <button type="button" class="operator" value="*">&#42;</button>
+            <button type="button" class="operator" value="/">&#47;</button>
+            <!-- <button type="button" class="percent" value="%">&#37;</button> -->
+
+            <!-- NUMBERS_BUTTON -->
+            <button type="button" value="7">&#55;</button>
+            <button type="button" value="8">&#56;</button>
+            <button type="button" value="9">&#57;</button>
+
+
+            <button type="button" value="4">&#52;</button>
+            <button type="button" value="5">&#53;</button>
+            <button type="button" value="6">&#54;</button>
+
+
+            <button type="button" value="1">&#49;</button>
+            <button type="button" value="2">&#50;</button>
+            <button type="button" value="3">&#51;</button>
+
+
+            <button type="button" value="0">&#48;</button>
+            <button type="button" class="decimal function" value=".">&#46;</button>
+            <button type="button" class="all-clear function" value="all-clear">&#65;&#67;</button>
+
+
+            <button type="button" class="equal-sign operator" value="=">&#61;</button>
+            
+        <!-- END_CALCULATOR-KEYS_DIV -->
+        </div>
+    <!-- END_CALCULATOR_DIV -->
+    </div>
+    
+    
+    <!--                ---- LINK_JAVASCRIPT ---- -->
+    <script src="/JS/calculator_javascript.js"></script>
+</body>
+</html>

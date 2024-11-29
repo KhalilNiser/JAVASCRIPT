@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function ArrowFunction</title>
+</head>
+<body>
+    
+    <script>
+
+        //              ---- FUNCTION ----
+        function add( x, y )
+        {
+            const result = x + y;
+
+            return result;
+        }
+
+        // FUNCTION_OUTPUT
+        console.log( add( 2, 3 ) );
+
+
+        //              ---- ARROW_FUNCTION ----
+        const arrowAdd = ( x, y ) => x + y;
+
+
+        // ARROW_FUNCTION_OUTPUT
+        console.log( arrowAdd( 5, 7 ) );
+
+
+
+        //              ---- SOME()_METHOD ----
+        // Constant users "name/age" array
+        const users = 
+        [
+            { name: "john", age: 25 },
+            { name: "Sarah", age: 24 },
+            { name: "Bob", age: 35 },
+            { name: "Alice", age: 30 },
+        ];
+
+        /**
+         * Using the some() function to check if any of the 
+         * users are older than 20.
+        */
+       const olderThan20 = users.some( ( user ) => user.age > 20 );
+       // Returns True: As some of the String names are older than 20
+       console.log( olderThan20 ); 
+
+        /**
+         * Using every() function to check if all the users 
+         * are older than 20
+        */
+       const allOlderThan20 = users.every( ( user ) => user.age > 20 );
+       // Returns True: As all the String names are older than 20
+       console.log( allOlderThan20 ); 
+
+       /**
+         * Using find() function to find the first user that is
+         * older than 20
+        */
+       const firstOlderThan20 = users.find( ( user ) => user.age > 20 );
+       console.log( firstOlderThan20 );
+
+       /**
+         * Using find() function to find the user that is
+         * older than 20, and return the name
+        */
+        //              ---- END_SOME()_METHOD ----
+        const firstOlderThan20Name = users.find( ( user ) => user.age > 20 ).name;
+        console.log( firstOlderThan20Name );
+
+    </script>
+</body>
+</html>

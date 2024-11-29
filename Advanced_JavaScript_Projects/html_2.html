@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML_CSS Advanced Projects (Contact Form)</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/css_1.css">
+</head>
+<body>
+    <h3>HTML_CSS Form</h3>
+
+    <p>
+        Resize the browser window to see the effect. When the screen is<br>
+        less than 600px wide, it makes the two columns stack on top of<br>
+        each other, instead of next next to each other
+    </p>
+
+    <!-- CONTAINER_DIV -->
+    <div>
+        <!-- FORM -->
+        <!-- FIRST_NAME -->
+        <form action="/action_page.php" onsubmit="return validateForm()" method="post">
+            <label for="fstName">Frist Name</label>
+            <input type="text" id="fstName" name="firstname" placeholder="Your Name..">
+
+            <!-- LAST_NAME -->
+            <label for="lstName">Last Name</label>
+            <input type="text" id="lstName" name="lastname" placeholder="Your Last Name..">
+
+            <!-- COUNTRY -->
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+
+            <input type="submit" value="Submit">
+        </form>
+        <!-- END_FORM -->
+    </div>
+    <!-- END_CONTAINER_DIV -->
+
+    
+    <!-- LOCATE_JAVASCRIPT -->
+    <script src="/JS/javascript_2.js"></script>
+</body>
+</html>
